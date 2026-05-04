@@ -427,10 +427,10 @@
                     (%decode-map cbs
                                  (lambda (v)
                                    (%decode-or-ref v
-                                                   (lambda (pi)
-                                                     (%decode-map pi
+                                                   (lambda (aa)
+                                                     (%decode-map aa
                                                                   (lambda (item)
-                                                                    (%decode-or-ref item (lambda (pi2) (json:decode-json 'path-item pi2)))))))))))
+                                                                    (%decode-or-ref item (lambda (bb) (json:decode-json 'path-item bb)))))))))))
     (%set-decoded obj operation-servers ht "servers"
                   (lambda (servers)
                     (%decode-array servers
@@ -530,10 +530,10 @@
                     (%decode-map cbs
                                  (lambda (v)
                                    (%decode-or-ref v
-                                                   (lambda (pi)
-                                                     (%decode-map pi
+                                                   (lambda (aa)
+                                                     (%decode-map aa
                                                                   (lambda (item)
-                                                                    (%decode-or-ref item (lambda (pi2) (json:decode-json 'path-item pi2)))))))))))
+                                                                    (%decode-or-ref item (lambda (bb) (json:decode-json 'path-item bb)))))))))))
     obj))
 
 ;;; ── OpenAPI Document ────────────────────────────────────────────────────────
@@ -552,7 +552,7 @@
                     (%decode-map paths
                                  (lambda (v)
                                    (%decode-or-ref v
-                                                   (lambda (pi) (json:decode-json 'path-item pi)))))))
+                                                   (lambda (aa) (json:decode-json 'path-item aa)))))))
     (%set-decoded doc openapi-components ht "components"
                   (lambda (v) (json:decode-json 'components v)))
     (%set-when doc openapi-security ht "security")

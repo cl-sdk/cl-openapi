@@ -1,3 +1,5 @@
+(in-package :cl-openapi.test)
+
 (def-suite cl-openapi-suite
   :description "Test suite for cl-openapi.")
 
