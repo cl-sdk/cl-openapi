@@ -203,5 +203,4 @@ accessor is `reference-ref` (the raw `$ref` string).
 
 ## License
 
-This is free and unencumbered software released into the public domain.
-See the [Unlicense](LICENSE) for details.
+Unlicense
