@@ -21,8 +21,6 @@
             packages = [
               pkgs.sbcl
               pkgs.roswell
-              pkgs.sbclPackages.qlot
-              pkgs.sbclPackages.qlot-cli
               pkgs.git
             ];
 
